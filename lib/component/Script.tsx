@@ -1,5 +1,5 @@
 import React, {FunctionComponent, useEffect} from 'react'
-import {useScript} from '../use/use-script'
+import {useScript} from '../hook/use-script'
 
 export const Script: FunctionComponent<Props> = props => {
   const [{loaded, error}] = useScript(props.src)

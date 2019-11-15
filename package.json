@@ -1,6 +1,6 @@
 {
   "name": "react-script-fall",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "load script tag with order you define",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "build": "rollup -c",
+    "prepare": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -38,5 +38,6 @@
     "rollup": "^1.16.2",
     "rollup-plugin-typescript2": "^0.21.2",
     "typescript": "^3.5.2"
-  }
+  },
+  "dependencies": {}
 }

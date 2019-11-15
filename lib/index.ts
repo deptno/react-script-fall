@@ -1,3 +1,3 @@
 export {Script} from './component/Script'
-export {useScript} from './use/use-script'
+export {useScript} from './hook/use-script'
 
