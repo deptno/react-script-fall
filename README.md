@@ -19,7 +19,7 @@ so we need something to control this.
 #### simple
 ```typescript jsx
 <Script src="https://cdn-dependency" onLoad={(loaded) => console.log({loaded})}>
-  <Script src="https://cdn"/>
+  <Script src="https://cdn" async/>
 </Script>
 ```
 #### real world

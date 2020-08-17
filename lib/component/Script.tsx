@@ -2,7 +2,7 @@ import React, {FunctionComponent, useEffect} from 'react'
 import {useScript} from '../hook/use-script'
 
 export const Script: FunctionComponent<Props> = props => {
-  const [{loaded, error}] = useScript(props.src)
+  const [{loaded, error}] = useScript(props.src, props.async)
 
   useEffect(() => {
     if (props.onLoad) {
@@ -28,4 +28,5 @@ export const Script: FunctionComponent<Props> = props => {
 type Props = {
   src: string
   onLoad?(loaded: boolean): void
+  async?: boolean
 }
